@@ -96,11 +96,16 @@ export default function HomeClient() {
     return () => io.disconnect();
   }, [content.stats]);
 
+  const modalBodyRef = useRef<HTMLDivElement | null>(null);
+
   // Handle mock click for mobile modal preview
   const handleMockClick = (img: string, title: string) => {
     if (window.innerWidth <= 980) {
       setModalData({ img, title });
       document.body.style.overflow = "hidden";
+      if (modalBodyRef.current) {
+        modalBodyRef.current.scrollTop = 0;
+      }
     }
   };
 
@@ -785,7 +790,7 @@ export default function HomeClient() {
               &times;
             </button>
           </div>
-          <div className="modal-body" id="modalBody">
+          <div className="modal-body" id="modalBody" ref={modalBodyRef}>
             {modalData && (
               <Image
                 id="modalImg"
