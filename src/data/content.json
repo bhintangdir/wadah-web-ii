@@ -7,7 +7,11 @@
     "logo": "/logo.webp",
     "primaryText": "Wadah",
     "secondaryText": "Web",
-    "whatsappUrl": "https://wa.me/6281234567890",
+    "whatsappNumber": "085181906445",
+    "whatsappUrl": "https://wa.me/6285181906445",
+    "email": "official.wadahweb@gmail.com",
+    "instagram": "official.wadahweb",
+    "instagramUrl": "https://instagram.com/official.wadahweb",
     "description": "Partner terpercaya pembuatan website modern & aplikasi khusus untuk mempercepat pertumbuhan bisnis Anda dengan integrasi WhatsApp langsung."
   },
   "nav": {
@@ -255,7 +259,7 @@
   "bottomNav": [
     { "label": "Home", "href": "#top", "icon": "i-home", "type": "link" },
     { "label": "Layanan", "href": "#layanan", "icon": "i-grid", "type": "link" },
-    { "label": "WhatsApp", "href": "https://wa.me/6281234567890", "icon": "i-wa", "type": "wa" },
+    { "label": "WhatsApp", "href": "https://wa.me/6285181906445", "icon": "i-wa", "type": "wa" },
     { "label": "Contoh", "href": "#contoh", "icon": "i-globe", "type": "link" },
     { "label": "Paket", "href": "#paket", "icon": "i-card", "type": "link" }
   ]

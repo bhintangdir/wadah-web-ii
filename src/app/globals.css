@@ -314,7 +314,11 @@ footer{padding:60px 0 36px;color:var(--mut);font-size:.93rem;border-top:1px soli
 .f-links a{color:var(--mut);transition:color .2s;font-size:.92rem}
 .f-links a:hover{color:var(--sea)}
 .f-address{font-size:.9rem;line-height:1.5;color:var(--mut);white-space:pre-line;margin-bottom:8px}
-.f-hours{font-size:.85rem;font-weight:600;color:var(--ink)}
+.f-hours{font-size:.85rem;font-weight:600;color:var(--ink);margin-bottom:12px}
+.f-contacts{display:grid;gap:8px;margin-bottom:6px}
+.f-contact-item{display:flex;align-items:center;gap:8px;font-size:.88rem;color:var(--mut);transition:color .2s}
+.f-contact-item .i{width:16px;height:16px;color:var(--sea)}
+.f-contact-item:hover{color:var(--sea)}
 .f-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:1px solid var(--line);font-size:.86rem;flex-wrap:wrap;gap:12px}
 .f-bottom-links a{color:var(--sea);font-weight:600}
 

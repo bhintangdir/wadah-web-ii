@@ -151,6 +151,11 @@ export default function HomeClient() {
             <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
             <circle cx="12" cy="13" r="4" />
           </symbol>
+          <symbol id="i-ig" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+          </symbol>
           <symbol id="i-pin" viewBox="0 0 24 24">
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
             <circle cx="12" cy="10" r="3" />
@@ -703,9 +708,33 @@ export default function HomeClient() {
               <h4>{content.footer.contactTitle}</h4>
               <p className="f-address">{content.footer.address}</p>
               <p className="f-hours">{content.footer.hours}</p>
+              <div className="f-contacts">
+                <a
+                  href={`mailto:${content.brand.email}`}
+                  className="f-contact-item"
+                  aria-label="Email kami"
+                >
+                  <svg className="i">
+                    <use href="#i-mail" />
+                  </svg>
+                  <span>{content.brand.email}</span>
+                </a>
+                <a
+                  href={content.brand.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="f-contact-item"
+                  aria-label="Instagram kami"
+                >
+                  <svg className="i">
+                    <use href="#i-ig" />
+                  </svg>
+                  <span>@{content.brand.instagram}</span>
+                </a>
+              </div>
               <a
                 className="btn sm wa"
-                style={{ marginTop: "12px", width: "fit-content" }}
+                style={{ marginTop: "14px", width: "fit-content" }}
                 href={content.brand.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -713,7 +742,7 @@ export default function HomeClient() {
                 <svg className="i">
                   <use href="#i-wa" />
                 </svg>
-                Chat WhatsApp
+                WhatsApp {content.brand.whatsappNumber}
               </a>
             </div>
           </div>
