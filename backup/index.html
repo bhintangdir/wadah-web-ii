@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wadah-Web | Jasa Pembuatan Website Travel, Company Profile & Bisnis</title>
+<meta name="description" content="Jasa pembuatan website modern untuk travel, company profile, toko, dan bisnis lokal. Cepat, responsif, siap menerima booking via WhatsApp.">
+<link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#04245C;--sea:#0055FF;--aqua:#0B3B8C;--sun:#2B7FFF;--mist:#F3F7FF;--line:#DCE5F2;--mut:#4A5E7A;--k:1}
+.hero{--ink:#0A2342;--sea:#1565D8;--aqua:#12B5A6;--sun:#FF8A3D}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Figtree,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:'Bricolage Grotesque',Figtree,sans-serif;line-height:1.08;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:auto;padding:0 24px}
+.i{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.wa .i,.bnav-wa .i{fill:currentColor;stroke:none}
+:focus-visible{outline:3px solid var(--sea);outline-offset:3px}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--sea),var(--aqua),var(--sun));z-index:99}
+/* nav */
+#nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:.3s}
+#nav.s{border-color:var(--line);box-shadow:0 8px 30px -18px rgba(10,35,66,.3)}
+#nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+#nav .logo{font:800 1.3rem 'Bricolage Grotesque';display:flex;gap:10px;align-items:center}
+.logo{display:inline-flex;gap:10px;align-items:center}
+.logo-label{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-.02em;line-height:1}
+.logo-label .p{color:var(--sea)}
+.logo-label .s{color:var(--ink)}
+#nav .logo i{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--sea),var(--aqua));display:grid;place-items:center;color:#fff}
+#nav .logo i .i{width:18px;height:18px}
+#nav ul{display:flex;gap:30px;list-style:none;font-weight:500;color:var(--mut)}
+#nav ul a{position:relative;padding:4px 0;transition:color .2s}
+#nav ul a::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:100%;background:var(--sea);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+#nav ul a:hover{color:var(--ink)}#nav ul a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;background:var(--ink);color:#fff;border:0;cursor:pointer;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 30px -10px rgba(10,35,66,.5)}
+.btn::after{content:"";position:absolute;top:0;left:-70%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);transition:left .7s}
+.btn:hover::after{left:130%}
+.btn.sm{padding:10px 20px;font-size:.92rem}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn.ghost:hover{border-color:var(--ink);box-shadow:none}
+.btn.wa{background:#1FB655;display:inline-flex;align-items:center}
+.btn.wa svg.i{width:20px;height:20px}
+.btn.pulse{animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(31,182,85,.55)}70%,100%{box-shadow:0 0 0 20px rgba(31,182,85,0)}}
+/* hero */
+.hero{position:relative;padding:50px 0 70px;overflow:hidden;background:radial-gradient(1000px 500px at 80% 10%,#e5f3ff,transparent 60%),#fff}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:20px;align-items:center;position:relative;z-index:2}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.45;animation:drift 14s ease-in-out infinite alternate;z-index:0}
+.b1{width:380px;height:380px;background:#9fd8ff;top:-80px;right:10%}
+.b2{width:300px;height:300px;background:#ffd2b0;bottom:-60px;left:-40px;animation-delay:-5s}
+.b3{width:260px;height:260px;background:#a8f0e4;top:30%;left:38%;animation-delay:-9s;opacity:.3}
+@keyframes drift{to{transform:translate(60px,-40px) scale(1.2)}}
+.hero h1{font-size:clamp(2.4rem,5vw,4.1rem);font-weight:800;margin:18px 0 20px}
+.hero p.lead{font-size:1.15rem;color:var(--mut);max-width:30em}
+.badge{display:inline-flex;gap:10px;align-items:center;padding:7px 16px 7px 8px;border-radius:99px;background:#fff;border:1px solid var(--line);font-size:.9rem;font-weight:500;box-shadow:0 6px 20px -12px rgba(10,35,66,.4)}
+.badge b{background:var(--aqua);color:#fff;border-radius:99px;padding:2px 10px;font-size:.78rem}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin:30px 0 26px}
+.trust{display:flex;gap:22px;flex-wrap:wrap;color:var(--mut);font-size:.93rem}
+.trust span{display:flex;gap:8px;align-items:center}.trust .i{color:var(--aqua);width:18px;height:18px}
+.load{opacity:0;transform:translateY(30px);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--n)*.12s)}
+@keyframes up{to{opacity:1;transform:none}}
+/* orbit stage */
+.sw{height:calc(560px*var(--k,1));display:flex;justify-content:center;align-items:center;position:relative;overflow:hidden;max-width:100%}
+.stage{width:560px;height:560px;position:relative;flex:none;transform:scale(var(--k,1));transform-origin:center center}
+.ring{position:absolute;left:50%;top:50%;border:1.5px dashed #b9cfe0;border-radius:50%;transform:translate(-50%,-50%)}
+.r1{width:330px;height:330px}.r2{width:500px;height:500px;border-color:#d3e2ec}
+.rip{position:absolute;left:50%;top:50%;width:220px;height:220px;margin:-110px;border-radius:50%;border:2px solid var(--sea);opacity:0;animation:ripple 4.5s ease-out infinite}
+.rip:nth-child(2){animation-delay:2.2s;border-color:var(--aqua)}
+@keyframes ripple{from{transform:scale(.8);opacity:.5}to{transform:scale(2.4);opacity:0}}
+.orb{position:absolute;inset:0;animation:spin var(--d) linear infinite}
+.orb.rev{animation-direction:reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ic{position:absolute;left:50%;top:50%;width:0;height:0;transform:rotate(var(--a)) translateX(var(--r))}
+.up{position:absolute;left:-27px;top:-27px;transform:rotate(calc(var(--a)*-1))}
+.cnt{animation:spin var(--d) linear infinite reverse}
+.rev .cnt{animation-direction:normal}
+.tile{width:54px;height:54px;border-radius:17px;display:grid;place-items:center;color:#fff;box-shadow:0 14px 26px -10px var(--c),inset 0 1px 0 rgba(255,255,255,.4);background:var(--c);transition:transform .25s}
+.tile:hover{transform:scale(1.2)}
+.core{position:absolute;left:50%;top:50%;width:250px;margin:-105px 0 0 -125px;background:#fff;border-radius:20px;box-shadow:0 30px 60px -20px rgba(10,35,66,.45),0 0 0 1px var(--line);z-index:3;animation:float 6s ease-in-out infinite;overflow:hidden;transition:translate .2s}
+@keyframes float{50%{transform:translateY(-14px)}}
+.core .bar{display:flex;gap:6px;align-items:center;padding:10px 12px;background:var(--mist)}
+.core .bar b{width:9px;height:9px;border-radius:50%;background:#ff8a7a}.core .bar b:nth-child(2){background:#ffcf5c}.core .bar b:nth-child(3){background:#5fd68a}
+.core .bar span{margin-left:8px;font-size:.7rem;color:var(--mut);background:#fff;border-radius:8px;padding:2px 10px;flex:1}
+.scene{height:108px;position:relative;overflow:hidden;background:linear-gradient(#bfe3ff,#e8f6ff 62%,#ffd9b8)}
+.scene .sunb{position:absolute;right:30px;bottom:-14px;width:44px;height:44px;border-radius:50%;background:var(--sun);animation:sunrise 6s ease-in-out infinite alternate}
+@keyframes sunrise{to{transform:translateY(-34px)}}
+.scene .plane{position:absolute;top:26px;left:-30px;width:28px;height:28px;color:var(--sea);fill:var(--sea);animation:fly 5s linear infinite}
+@keyframes fly{to{transform:translate(290px,-14px)}}
+.core .bd{padding:14px;display:grid;gap:9px;justify-items:start}
+.ln{height:9px;border-radius:6px;width:100%;background:linear-gradient(90deg,#e6eef4 25%,#f7fbfd 50%,#e6eef4 75%);background-size:200% 100%;animation:shimmer 1.8s linear infinite}
+@keyframes shimmer{to{background-position:-200% 0}}
+.core .pill{background:#1FB655;color:#fff;font-size:.72rem;font-weight:600;border-radius:99px;padding:6px 14px;animation:pulse 2.4s infinite}
+.chip{position:absolute;z-index:4;background:#fff;border-radius:14px;padding:10px 14px;font-size:.82rem;font-weight:600;display:flex;gap:10px;align-items:center;box-shadow:0 18px 34px -14px rgba(10,35,66,.4);animation:bob 5s ease-in-out infinite}
+.chip .i{width:18px;height:18px;color:var(--aqua)}
+.c1{left:2%;top:19%}.c2{right:0;bottom:19%;animation-delay:-2.5s}.c2 .i{color:var(--sun)}
+@keyframes bob{50%{transform:translateY(-12px)}}
+/* marquee */
+.mq{overflow:hidden;display:grid;gap:14px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.mq div{display:flex;gap:14px;width:max-content;animation:mq 38s linear infinite;will-change:transform}
+.mq div.back{animation-direction:reverse;animation-duration:44s}
+.mq:hover div{animation-play-state:paused}
+.mq span{padding:8px 20px;border-radius:99px;background:#fff;border:1px solid var(--line);font-weight:500;color:var(--mut);white-space:nowrap;flex-shrink:0}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 7px))}}
+/* sections */
+section{padding:96px 0}
+.hd{max-width:640px;margin-bottom:48px}
+.hd h2{font-size:clamp(1.9rem,3.6vw,2.9rem);font-weight:800;margin-bottom:14px}
+.hd p{color:var(--mut);font-size:1.08rem}
+.rv{opacity:0;transform:translateY(34px) scale(.98);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--d,0)*.1s)}
+.rv.in{opacity:1;transform:none}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{position:relative;padding:28px;border-radius:22px;background:#fff;border:1px solid var(--line);transition:transform .15s,box-shadow .3s;transform-style:preserve-3d;overflow:hidden}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx,50%) var(--my,0),rgba(21,101,216,.13),transparent 70%);opacity:0;transition:opacity .3s}
+.card:hover{box-shadow:0 26px 50px -26px rgba(10,35,66,.4)}.card:hover::before{opacity:1}
+.card .ico{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;color:var(--c);background:transparent;border:2.5px solid var(--c);margin-bottom:22px;transition:transform .5s}
+.card:hover .ico{transform:rotate(-10deg) scale(1.1)}
+.card h3{font-size:1.3rem;margin-bottom:10px}.card p{color:var(--mut);font-size:.97rem}
+/* stats */
+.stats{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.stats::before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:conic-gradient(from 0deg,var(--sea),var(--aqua),var(--sun),var(--sea));filter:blur(120px);opacity:.28;left:50%;top:-300px;margin-left:-300px;animation:spin 20s linear infinite}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center;position:relative}
+.stats b{display:block;font:800 clamp(2.4rem,5vw,3.8rem) 'Bricolage Grotesque'}
+.stats span{color:#a9bfd6}
+/* templates */
+.tpl{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1040px;margin:0 auto}
+.mock{border-radius:18px;border:1px solid var(--line);background:#fff;overflow:hidden;transition:transform .4s,box-shadow .4s}
+.mock:hover{transform:translateY(-8px);box-shadow:0 30px 50px -25px rgba(10,35,66,.45)}
+.mock .bar{display:flex;align-items:center;gap:10px;padding:9px 13px;background:var(--mist);border-bottom:1px solid rgba(10,35,66,.05)}
+.mock .bar-dots{display:flex;gap:5px;align-items:center}
+.mock .bar b{width:8px;height:8px;border-radius:50%;background:#ff8a7a}
+.mock .bar b:nth-child(2){background:#ffcf5c}
+.mock .bar b:nth-child(3){background:#5fd68a}
+.mock .bar span{margin-left:auto;font-size:.68rem;color:var(--mut);background:#fff;border:1px solid var(--line);border-radius:6px;padding:2px 10px;font-family:inherit;font-weight:500}
+.view{height:220px;overflow:hidden;background:#0d1b2a;position:relative}
+.view img{width:100%;height:auto;display:block;transition:transform 35s linear;will-change:transform}
+.mock:hover .view img{transform:translateY(calc(-100% + 220px))}
+@media(max-width:980px){.mock{cursor:pointer}}
+
+/* bottom navigation for mobile */
+.bnav{display:none}
+@media(max-width:768px){
+  body{padding-bottom:calc(64px + env(safe-area-inset-bottom, 0px) + 16px)!important}
+  .bnav{
+    position:fixed!important;
+    top:auto!important;
+    bottom:0!important;
+    left:0!important;
+    right:0!important;
+    width:100vw!important;
+    height:calc(62px + env(safe-area-inset-bottom, 0px))!important;
+    background:#ffffff!important;
+    border-top:1px solid #dce7ee!important;
+    border-bottom:none!important;
+    display:grid!important;
+    grid-template-columns:repeat(5,1fr)!important;
+    align-items:center!important;
+    z-index:999999!important;
+    padding:0 4px env(safe-area-inset-bottom, 0px)!important;
+    box-shadow:0 -6px 25px rgba(10,35,66,.12)!important;
+    transform:none!important;
+  }
+  .bnav a{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:4px!important;
+    font-size:.68rem!important;
+    font-weight:600!important;
+    color:#506679!important;
+    text-decoration:none!important;
+    height:100%!important;
+    padding:0!important;
+  }
+  .bnav a .i{width:22px!important;height:22px!important}
+  .bnav a.active,.bnav a:hover{color:var(--sea)!important}
+  .bnav a.bnav-wa{color:#1FB655!important}
+  .bnav a.bnav-wa .bnav-wa-icon{
+    width:42px!important;
+    height:42px!important;
+    border-radius:50%!important;
+    background:#1FB655!important;
+    display:grid!important;
+    place-items:center!important;
+    color:#ffffff!important;
+    box-shadow:0 8px 20px rgba(31,182,85,.45)!important;
+    margin-top:-22px!important;
+    border:3px solid #ffffff!important;
+  }
+  .bnav a.bnav-wa .bnav-wa-icon .i{width:22px!important;height:22px!important;color:#fff!important}
+  #nav .wrap{height:60px;padding:0 16px}
+  #nav .logo img{height:28px!important}
+  #nav .logo-label{font-size:1.1rem}
+  #nav .btn.sm{padding:9px 14px;font-size:.82rem;gap:6px}
+  #nav .btn.sm .i{width:16px;height:16px}
+}
+.modal{position:fixed;inset:0;z-index:999;background:rgba(10,35,66,.85);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:16px;opacity:0;pointer-events:none;transition:opacity .3s ease}
+.modal.open{opacity:1;pointer-events:auto}
+.modal-box{background:#fff;width:100%;max-width:680px;height:86vh;max-height:850px;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 30px 60px rgba(0,0,0,.45);animation:zoomIn .3s ease}
+@keyframes zoomIn{from{transform:scale(.95);opacity:0}to{transform:none;opacity:1}}
+.modal-bar{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;background:var(--mist);border-bottom:1px solid var(--line)}
+.modal-bar .bar-dots{display:flex;gap:6px}
+.modal-bar b{width:10px;height:10px;border-radius:50%;background:#ff8a7a}
+.modal-bar b:nth-child(2){background:#ffcf5c}
+.modal-bar b:nth-child(3){background:#5fd68a}
+.modal-title{font-size:.8rem;font-weight:600;color:var(--mut);background:#fff;padding:4px 14px;border-radius:8px;border:1px solid var(--line)}
+.modal-close{border:0;background:none;font-size:1.6rem;line-height:1;color:var(--mut);cursor:pointer;padding:0 4px;transition:color .2s}
+.modal-close:hover{color:var(--ink)}
+.modal-body{flex:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;background:#0d1b2a;position:relative}
+.modal-body img{width:100%;height:auto;display:block}
+.mock figcaption{padding:16px 18px;border-top:1px solid var(--line)}
+.mock h3{font-size:1.05rem;margin-bottom:4px}.mock p{color:var(--mut);font-size:.88rem;line-height:1.45}
+/* process */
+.proc{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative}
+.proc::before{content:"";position:absolute;top:26px;left:6%;width:88%;height:3px;background:linear-gradient(90deg,var(--sea),var(--aqua),var(--sun));border-radius:3px;transform:scaleX(0);transform-origin:left;transition:transform 1.8s cubic-bezier(.5,0,.2,1)}
+.proc.in::before{transform:scaleX(1)}
+.step{position:relative;text-align:center}
+.step i{width:54px;height:54px;border-radius:50%;background:#fff;border:3px solid var(--sea);display:grid;place-items:center;margin:0 auto 20px;font:800 1.2rem 'Bricolage Grotesque';font-style:normal;position:relative;z-index:1}
+.step h3{font-size:1.15rem;margin-bottom:6px}.step p{color:var(--mut);font-size:.94rem}
+/* pricing */
+.alt{background:var(--mist)}
+.price{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
+.plan{padding:34px;border-radius:24px;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;position:relative;transition:transform .3s}
+.plan:hover{transform:translateY(-8px)}
+.plan.pop{border:0;background:linear-gradient(#fff,#fff) padding-box,conic-gradient(from var(--g,0deg),var(--sea),var(--aqua),var(--sun),var(--sea)) border-box;border:2.5px solid transparent;animation:rot 6s linear infinite}
+@property --g{syntax:'<angle>';inherits:false;initial-value:0deg}
+@keyframes rot{to{--g:360deg}}
+.plan .tag{position:absolute;top:-14px;right:24px;background:var(--sun);color:#fff;font-size:.8rem;font-weight:600;padding:4px 14px;border-radius:99px}
+.plan h3{font-size:1.3rem}.plan .p{font:800 2.2rem 'Bricolage Grotesque';margin:14px 0 4px}.plan small{color:var(--mut)}
+.plan ul{list-style:none;display:grid;gap:12px;margin:24px 0 30px;flex:1}
+.plan li{display:flex;gap:10px;align-items:flex-start;font-size:.97rem}.plan li .i{color:var(--aqua);width:18px;height:18px;margin-top:3px}
+.plan .btn{justify-content:center}
+/* faq */
+.faq{max-width:780px;margin:auto}
+.q{border-bottom:1px solid var(--line)}
+.q button{all:unset;box-sizing:border-box;width:100%;display:flex;justify-content:space-between;align-items:center;padding:22px 0;font:700 1.12rem 'Bricolage Grotesque';cursor:pointer}
+.q button:focus-visible{outline:3px solid var(--sea)}
+.q button::after{content:"+";font-size:1.6rem;color:var(--sea);transition:transform .35s}
+.q.o button::after{transform:rotate(135deg)}
+.q .a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s}
+.q.o .a{grid-template-rows:1fr}
+.q .a p{overflow:hidden;color:var(--mut)}
+.q.o .a p{padding-bottom:22px}
+/* final cta */
+.end{background:linear-gradient(135deg,#0A2342,#124a8a);color:#fff;text-align:center;position:relative;overflow:hidden;border-radius:32px;padding:80px 24px;margin:0 24px}
+.end::before,.end::after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;filter:blur(60px);opacity:.4;animation:drift 10s ease-in-out infinite alternate}
+.end::before{background:var(--aqua);left:-80px;top:-100px}.end::after{background:var(--sun);right:-80px;bottom:-120px;animation-delay:-4s}
+.end>*{position:relative;z-index:1}
+.end h2{font-size:clamp(2rem,4vw,3.2rem);font-weight:800;max-width:15em;margin:0 auto 16px}
+.end p{color:#c4d6ea;margin-bottom:32px}
+footer{padding:50px 0 36px;color:var(--mut);font-size:.93rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:center}
+@media(max-width:980px){
+  :root{--k:.75}
+  .hero{padding:40px 0 50px}
+  .hero .wrap{grid-template-columns:1fr;gap:40px;text-align:center}
+  .hero p.lead{margin:0 auto}
+  .cta{justify-content:center}
+  .trust{justify-content:center}
+  .grid4,.stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .tpl,.price{grid-template-columns:1fr}
+  .proc{grid-template-columns:repeat(2,1fr);row-gap:40px}
+  .proc::before{display:none}
+  nav ul{display:none}
+}
+@media(max-width:640px){
+  :root{--k:.56}
+  .hero{padding:30px 0 40px}
+  .hero h1{font-size:clamp(1.9rem,8vw,2.5rem);margin:14px 0 16px}
+  .hero p.lead{font-size:1rem}
+  .cta{flex-direction:column;width:100%;max-width:320px;margin:24px auto 20px}
+  .cta .btn{width:100%;justify-content:center}
+  .trust{flex-direction:column;gap:10px;align-items:center}
+  .sw{height:300px;margin:10px auto 0;width:100%}
+  .grid4{grid-template-columns:1fr}
+  .stats .wrap{grid-template-columns:1fr;gap:22px}
+  section{padding:60px 0}
+  .end{margin:0 12px;padding:50px 18px;border-radius:24px}
+}
+@media(max-width:400px){
+  :root{--k:.48}
+  .sw{height:260px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv,.load{opacity:1;transform:none}.proc::before{transform:none}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.2.4c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M17.472 14.382c-.301-.15-1.78-.879-2.056-.98-.276-.1-.477-.15-.678.15-.2.301-.778.98-.953 1.18-.176.2-.351.226-.652.075-.301-.15-1.272-.469-2.423-1.496-.896-.799-1.501-1.787-1.677-2.088-.175-.301-.019-.464.132-.614.136-.135.301-.351.451-.527.151-.175.201-.301.301-.501.101-.2.05-.376-.025-.526-.075-.15-.677-1.631-.928-2.235-.244-.588-.493-.508-.678-.518-.175-.008-.376-.01-.577-.01-.201 0-.527.075-.802.376s-1.054 1.029-1.054 2.51 1.079 2.911 1.229 3.112c.15.201 2.122 3.24 5.141 4.544.718.31 1.279.496 1.716.635.721.23 1.378.197 1.9.12.581-.087 1.78-.727 2.032-1.429.25-.702.25-1.304.175-1.429-.075-.125-.276-.201-.577-.351zM12.04 2C6.518 2 2.03 6.474 2.03 12c0 1.905.534 3.687 1.459 5.208L2 22l4.945-1.442C8.423 21.373 10.18 22 12.04 22c5.522 0 10.01-4.475 10.01-10s-4.488-10-10.01-10z"/></symbol>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></symbol>
+<symbol id="i-camera" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+<symbol id="i-card" viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.2-6.2 3.2L7 14.2 2 9.3l6.9-1z"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></symbol>
+<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+<symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0"/></symbol>
+<symbol id="i-bld" viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4M9 9v.01M9 13v.01M9 17v.01"/></symbol>
+<symbol id="i-ok" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="i-up" viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-8M15 7h6v6"/></symbol>
+</defs></svg>
+
+<nav id="nav"><div class="wrap">
+  <a href="#top" class="logo"><img src="../public/logo.png" alt="Wadah-Web" style="height:32px;width:auto;display:block"><span class="logo-label"><span class="p">Wadah</span><span class="s">Web</span></span></a>
+  <ul><li><a href="#layanan">Layanan</a></li><li><a href="#contoh">Contoh</a></li><li><a href="#proses">Proses</a></li><li><a href="#paket">Paket</a></li><li><a href="#faq">FAQ</a></li></ul>
+  <a class="btn sm wa" href="https://wa.me/6281234567890" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>Hubungi kami</a>
+</div></nav>
+
+<header class="hero" id="top">
+  <i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i>
+  <div class="wrap">
+    <div>
+      <span class="badge load" style="--n:0"><b>Baru</b> Slot pengerjaan bulan ini terbatas</span>
+      <h1 class="load" style="--n:1">Website modern untuk travel, company profile, dan bisnis Anda</h1>
+      <p class="lead load" style="--n:2">Kami merancang dan membangun website yang cepat, rapi di semua layar, dan mengarahkan pengunjung langsung menghubungi atau memesan lewat WhatsApp.</p>
+      <div class="cta load" style="--n:3">
+        <a class="btn wa pulse" href="https://wa.me/6281234567890" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>Konsultasi gratis</a>
+        <a class="btn ghost" href="#contoh">Lihat contoh tampilan</a>
+      </div>
+      <div class="trust load" style="--n:4">
+        <span><svg class="i"><use href="#i-ok"/></svg>Online mulai 7 hari</span>
+        <span><svg class="i"><use href="#i-ok"/></svg>Responsif di HP</span>
+        <span><svg class="i"><use href="#i-ok"/></svg>Revisi sampai cocok</span>
+      </div>
+    </div>
+    <div class="sw load" style="--n:2"><div class="stage" id="stage">
+      <i class="ring r1"></i><i class="ring r2"></i><i class="rip"></i><i class="rip"></i>
+      <div class="orb" id="o1" style="--d:36s"></div>
+      <div class="orb rev" id="o2" style="--d:58s"></div>
+      <div class="core" id="core">
+        <div class="bar"><b></b><b></b><b></b><span>namabisnis.com</span></div>
+        <div class="scene"><i class="sunb"></i><svg class="i plane"><use href="#i-plane"/></svg></div>
+        <div class="bd"><div class="ln"></div><div class="ln" style="width:70%"></div><span class="pill">Pesan via WhatsApp</span></div>
+      </div>
+      <div class="chip c1"><svg class="i"><use href="#i-up"/></svg>Booking naik</div>
+      <div class="chip c2"><svg class="i"><use href="#i-bolt"/></svg>Loading cepat</div>
+    </div></div>
+  </div>
+</header>
+
+<section id="layanan"><div class="wrap">
+  <div class="hd rv"><h2>Satu tim, semua jenis website bisnis</h2><p>Pilih jenis website yang paling sesuai. Semua dibuat dengan desain khusus, bukan template yang dipakai ulang.</p></div>
+  <div class="grid4">
+    <article class="card rv" data-tilt style="--c:#1565D8;--d:0"><div class="ico"><svg class="i"><use href="#i-plane"/></svg></div><h3>Travel & Tour</h3><p>Katalog paket, galeri, itinerary, dan tombol booking ke WhatsApp. Siap dua bahasa untuk turis mancanegara.</p></article>
+    <article class="card rv" data-tilt style="--c:#0A2342;--d:1"><div class="ico"><svg class="i"><use href="#i-bld"/></svg></div><h3>Company Profile</h3><p>Profil, layanan, portofolio, dan kontak yang membangun kepercayaan calon klien sejak kunjungan pertama.</p></article>
+    <article class="card rv" data-tilt style="--c:#FF8A3D;--d:2"><div class="ico"><svg class="i"><use href="#i-bag"/></svg></div><h3>Toko & Katalog</h3><p>Tampilkan produk dan harga dengan rapi. Pesanan masuk lewat WhatsApp atau tautan marketplace Anda.</p></article>
+    <article class="card rv" data-tilt style="--c:#12B5A6;--d:3"><div class="ico"><svg class="i"><use href="#i-bolt"/></svg></div><h3>Landing Page Promo</h3><p>Satu halaman fokus untuk iklan Instagram dan Google, lengkap dengan formulir dan pelacakan konversi.</p></article>
+  </div>
+</div></section>
+
+<section class="alt" style="padding:80px 0">
+  <div class="wrap"><div class="hd rv" style="margin:0 auto 36px;text-align:center"><h2>Cocok untuk berbagai jenis bisnis</h2><p>Dari usaha wisata sampai perusahaan, strukturnya kami sesuaikan dengan cara pelanggan Anda mencari dan memesan.</p></div></div>
+  <div class="mq rv" aria-hidden="true"><div id="mq"></div><div id="mq2" class="back"></div></div>
+</section>
+
+<section class="stats"><div class="wrap">
+  <div class="rv"><b data-n="120" data-s="+">0</b><span>Website selesai</span></div>
+  <div class="rv" style="--d:1"><b data-n="7" data-s=" hari">0</b><span>Rata-rata waktu pengerjaan</span></div>
+  <div class="rv" style="--d:2"><b data-n="98" data-s="%">0</b><span>Klien puas</span></div>
+  <div class="rv" style="--d:3"><b data-n="24" data-s="/7">0</b><span>Website online terus</span></div>
+</div></section>
+
+<section id="contoh"><div class="wrap">
+  <div class="hd rv"><h2>Contoh tampilan website</h2><p>Arahkan kursor ke kartu untuk melihat halaman bergulir seperti di browser.</p></div>
+  <div class="tpl">
+    <figure class="mock rv" style="--c:#1565D8" data-img="../public/www.lomboktraveldiary.com.png" data-title="lomboktraveldiary.com">
+      <div class="bar"><div class="bar-dots"><b></b><b></b><b></b></div><span>lomboktraveldiary.com</span></div>
+      <div class="view"><img src="../public/www.lomboktraveldiary.com.png" alt="Lombok Travel Diary" loading="lazy" /></div>
+      <figcaption><h3>Lombok Travel Diary</h3><p>Paket wisata Sembalun, trekking Rinjani, airport transfer & snorkeling trip Gili.</p></figcaption>
+    </figure>
+    <figure class="mock rv" style="--c:#0A2342;--d:1" data-img="../public/www.tourtransportlombok.com.png" data-title="tourtransportlombok.com">
+      <div class="bar"><div class="bar-dots"><b></b><b></b><b></b></div><span>tourtransportlombok.com</span></div>
+      <div class="view"><img src="../public/www.tourtransportlombok.com.png" alt="Tour Transport Lombok" loading="lazy" /></div>
+      <figcaption><h3>Tour Transport Lombok</h3><p>Sewa mobil private driver, antar jemput bandara & custom tour Lombok-Sumbawa.</p></figcaption>
+    </figure>
+    <figure class="mock rv" style="--c:#12B5A6;--d:2" data-img="../public/www.lombokfunfishing.com.png" data-title="lombokfunfishing.com">
+      <div class="bar"><div class="bar-dots"><b></b><b></b><b></b></div><span>lombokfunfishing.com</span></div>
+      <div class="view"><img src="../public/www.lombokfunfishing.com.png" alt="Lombok Fun Fishing" loading="lazy" /></div>
+      <figcaption><h3>Lombok Fun Fishing</h3><p>Charter perahu tradisional outrigger, spot mancing karang Ampenan & trip laut.</p></figcaption>
+    </figure>
+  </div>
+</div></section>
+
+<section class="alt" id="proses"><div class="wrap">
+  <div class="hd rv"><h2>Dari ide sampai online, empat langkah</h2><p>Anda cukup menyiapkan materi. Sisanya kami kerjakan dan kabarkan di setiap tahap.</p></div>
+  <div class="proc" id="proc">
+    <div class="step"><i>1</i><h3>Konsultasi</h3><p>Kami pahami bisnis, target pengunjung, dan tujuan website.</p></div>
+    <div class="step"><i>2</i><h3>Desain</h3><p>Anda menerima rancangan tampilan dan menyetujuinya.</p></div>
+    <div class="step"><i>3</i><h3>Pengembangan</h3><p>Desain dibangun menjadi website yang cepat dan responsif.</p></div>
+    <div class="step"><i>4</i><h3>Peluncuran</h3><p>Website tayang di domain Anda dan siap menerima pelanggan.</p></div>
+  </div>
+</div></section>
+
+<section id="paket"><div class="wrap">
+  <div class="hd rv"><h2>Paket yang bisa tumbuh bersama bisnis Anda</h2><p>Harga di bawah hanya contoh. Ubah sesuai penawaran Anda.</p></div>
+  <div class="price">
+    <div class="plan rv"><h3>Starter</h3><div class="p">Rp 1,5 jt</div><small>sekali bayar</small><ul><li><svg class="i"><use href="#i-ok"/></svg>Landing page 1 halaman</li><li><svg class="i"><use href="#i-ok"/></svg>Desain responsif</li><li><svg class="i"><use href="#i-ok"/></svg>Tombol WhatsApp</li><li><svg class="i"><use href="#i-ok"/></svg>Revisi 2 kali</li></ul><a class="btn ghost" href="https://wa.me/6281234567890" target="_blank" rel="noopener">Pilih Starter</a></div>
+    <div class="plan pop rv" style="--d:1"><span class="tag">Paling dipilih</span><h3>Bisnis</h3><div class="p">Rp 3,5 jt</div><small>sekali bayar</small><ul><li><svg class="i"><use href="#i-ok"/></svg>Hingga 6 halaman</li><li><svg class="i"><use href="#i-ok"/></svg>Galeri dan katalog paket</li><li><svg class="i"><use href="#i-ok"/></svg>SEO dasar</li><li><svg class="i"><use href="#i-ok"/></svg>Animasi dan formulir kontak</li><li><svg class="i"><use href="#i-ok"/></svg>Revisi 3 kali</li></ul><a class="btn" href="https://wa.me/6281234567890" target="_blank" rel="noopener">Pilih Bisnis</a></div>
+    <div class="plan rv" style="--d:2"><h3>Premium</h3><div class="p">Rp 6,5 jt</div><small>sekali bayar</small><ul><li><svg class="i"><use href="#i-ok"/></svg>Dua bahasa (ID dan EN)</li><li><svg class="i"><use href="#i-ok"/></svg>Blog dan panel edit konten</li><li><svg class="i"><use href="#i-ok"/></svg>Google Analytics</li><li><svg class="i"><use href="#i-ok"/></svg>Dukungan 3 bulan</li></ul><a class="btn ghost" href="https://wa.me/6281234567890" target="_blank" rel="noopener">Pilih Premium</a></div>
+  </div>
+</div></section>
+
+<section class="alt" id="faq"><div class="wrap">
+  <div class="hd rv" style="margin-inline:auto;text-align:center"><h2>Pertanyaan yang sering diajukan</h2></div>
+  <div class="faq rv">
+    <div class="q o"><button aria-expanded="true">Berapa lama website selesai?</button><div class="a"><p>Landing page biasanya 3 sampai 7 hari kerja. Website multi halaman 2 sampai 3 minggu, tergantung kesiapan materi.</p></div></div>
+    <div class="q"><button aria-expanded="false">Apakah bisa dua bahasa untuk turis asing?</button><div class="a"><p>Bisa. Paket Premium mencakup versi Indonesia dan Inggris dengan pilihan bahasa di bagian atas halaman.</p></div></div>
+    <div class="q"><button aria-expanded="false">Siapa yang mengurus domain dan hosting?</button><div class="a"><p>Kami bantu pembelian dan pengaturannya. Domain tetap terdaftar atas nama Anda.</p></div></div>
+  </div>
+</div></section>
+
+<section style="padding:80px 0 40px"><div class="end rv">
+  <h2>Siap punya website yang bekerja untuk bisnis Anda?</h2>
+  <p>Ceritakan kebutuhan Anda. Kami balas dengan rekomendasi dan estimasi hari ini.</p>
+  <a class="btn wa pulse" href="https://wa.me/6281234567890" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>Chat via WhatsApp</a>
+</div></section>
+
+<footer><div class="wrap"><a href="#top" class="logo"><img src="../public/logo.png" alt="Wadah-Web" style="height:32px;width:auto;display:block"><span class="logo-label"><span class="p">Wadah</span><span class="s">Web</span></span></a><span>© 2026 Wadah-Web. Semua hak dilindungi.</span></div></footer>
+
+<!-- Bottom Navigation for Mobile -->
+<nav class="bnav" aria-label="Navigasi Bawah Mobile">
+  <a href="#top" class="active"><svg class="i"><use href="#i-home"/></svg><span>Home</span></a>
+  <a href="#layanan"><svg class="i"><use href="#i-grid"/></svg><span>Layanan</span></a>
+  <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="bnav-wa" aria-label="Chat WhatsApp">
+    <div class="bnav-wa-icon"><svg class="i"><use href="#i-wa"/></svg></div>
+    <span>WhatsApp</span>
+  </a>
+  <a href="#contoh"><svg class="i"><use href="#i-globe"/></svg><span>Contoh</span></a>
+  <a href="#paket"><svg class="i"><use href="#i-card"/></svg><span>Paket</span></a>
+</nav>
+
+<!-- Preview Modal for Mobile / Full View -->
+<div id="prevModal" class="modal" role="dialog" aria-modal="true" aria-label="Preview Website">
+  <div class="modal-box">
+    <div class="modal-bar">
+      <div class="modal-bar-dots"><b></b><b></b><b></b></div>
+      <span class="modal-title" id="modalTitle">website.com</span>
+      <button class="modal-close" id="modalClose" aria-label="Tutup">&times;</button>
+    </div>
+    <div class="modal-body" id="modalBody">
+      <img id="modalImg" src="" alt="Website Preview" />
+    </div>
+  </div>
+</div>
+
+<script>
+const $=(s,c=document)=>c.querySelector(s),$$=(s,c=document)=>[...c.querySelectorAll(s)];
+/* orbit icons */
+const orbit=(el,list,r)=>{el.innerHTML=list.map(([i,c],n)=>{const a=n*360/list.length;return `<div class="ic" style="--a:${a}deg;--r:${r}px"><div class="up" style="--a:${a}deg"><div class="cnt" style="--d:${el.style.getPropertyValue('--d')}"><div class="tile" style="--c:${c}"><svg class="i"><use href="#i-${i}"/></svg></div></div></div></div>`}).join('')};
+orbit($('#o1'),[['plane','#1565D8'],['chat','#1FB655'],['camera','#E1306C'],['pin','#EA4335']],165);
+orbit($('#o2'),[['cal','#7C5CFC'],['mail','#FF8A3D'],['card','#0A2342'],['star','#F5B301'],['globe','#12B5A6'],['bag','#E5484D']],250);
+/* marquee */
+const row=(id,a)=>$(id).innerHTML=[...a,...a,...a,...a].map(t=>`<span>${t}</span>`).join('');
+row('#mq',['Travel & Tour','Company Profile','Toko Online','Restoran & Kafe','Klinik & Kecantikan','Villa & Penginapan']);
+row('#mq2',['Sewa Kendaraan','Fotografer','Sekolah & Kursus','Konsultan','Event Organizer','Bengkel & Jasa']);
+/* scroll: progress bar + nav shadow */
+addEventListener('scroll',()=>{const h=document.documentElement;$('#bar').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';$('#nav').classList.toggle('s',h.scrollTop>10)},{passive:true});
+/* reveal + counters + timeline */
+const count=el=>{const n=+el.dataset.n,s=el.dataset.s,t0=performance.now();const f=t=>{const p=Math.min((t-t0)/1600,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');$$('[data-n]',e.target).forEach(count);if(e.target.dataset.n)count(e.target);io.unobserve(e.target)}}),{threshold:.2});
+$$('.rv,#proc').forEach(e=>io.observe(e));
+/* card tilt + glow */
+$$('[data-tilt]').forEach(c=>{c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;c.style.setProperty('--mx',x*100+'%');c.style.setProperty('--my',y*100+'%');c.style.transform=`perspective(800px) rotateX(${(.5-y)*8}deg) rotateY(${(x-.5)*8}deg) translateY(-4px)`});c.addEventListener('mouseleave',()=>c.style.transform='')});
+/* hero parallax */
+$('.hero').addEventListener('mousemove',e=>{const x=(e.clientX/innerWidth-.5)*18,y=(e.clientY/innerHeight-.5)*18;$('#core').style.translate=`${x}px ${y}px`});
+/* faq */
+$$('.q button').forEach(b=>b.addEventListener('click',()=>{const q=b.parentElement,o=q.classList.contains('o');$$('.q').forEach(x=>{x.classList.remove('o');$('button',x).setAttribute('aria-expanded',false)});if(!o){q.classList.add('o');b.setAttribute('aria-expanded',true)}}));
+/* preview modal (mobile only) */
+const modal=$('#prevModal'),mImg=$('#modalImg'),mTitle=$('#modalTitle'),mBody=$('#modalBody');
+const openModal=(img,title)=>{mImg.src=img;mTitle.textContent=title;modal.classList.add('open');document.body.style.overflow='hidden';mBody.scrollTop=0};
+const closeModal=()=>{modal.classList.remove('open');document.body.style.overflow='';mImg.src=''};
+$$('.mock').forEach(m=>m.addEventListener('click',()=>{
+  if(window.innerWidth<=980){ openModal(m.dataset.img,m.dataset.title); }
+}));
+$('#modalClose').addEventListener('click',closeModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeModal()});
+</script>
+</body>
+</html>

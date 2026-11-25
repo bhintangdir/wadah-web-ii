@@ -1,0 +1,262 @@
+{
+  "meta": {
+    "title": "Wadah-Web | Jasa Pembuatan Website Travel, Company Profile & Bisnis",
+    "description": "Jasa pembuatan website modern untuk travel, company profile, toko, dan bisnis lokal. Cepat, responsif, siap menerima booking via WhatsApp."
+  },
+  "brand": {
+    "logo": "/logo.png",
+    "primaryText": "Wadah",
+    "secondaryText": "Web",
+    "whatsappUrl": "https://wa.me/6281234567890",
+    "description": "Partner terpercaya pembuatan website modern & aplikasi khusus untuk mempercepat pertumbuhan bisnis Anda dengan integrasi WhatsApp langsung."
+  },
+  "nav": {
+    "links": [
+      { "label": "Layanan", "href": "#layanan" },
+      { "label": "Contoh", "href": "#contoh" },
+      { "label": "Proses", "href": "#proses" },
+      { "label": "Paket", "href": "#paket" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "ctaLabel": "Hubungi kami"
+  },
+  "hero": {
+    "badgeTag": "Baru",
+    "badgeText": "Slot pengerjaan bulan ini terbatas",
+    "title": "Website modern untuk travel, company profile, dan bisnis Anda",
+    "lead": "Kami merancang dan membangun website yang cepat, rapi di semua layar, dan mengarahkan pengunjung langsung menghubungi atau memesan lewat WhatsApp.",
+    "primaryCta": "Konsultasi gratis",
+    "secondaryCta": "Lihat contoh tampilan",
+    "trustItems": [
+      "Online mulai 7 hari",
+      "Responsif di HP",
+      "Revisi sampai cocok"
+    ],
+    "coreDomain": "namabisnis.com",
+    "corePill": "Pesan via WhatsApp",
+    "chips": [
+      { "icon": "i-up", "text": "Booking naik", "className": "c1" },
+      { "icon": "i-bolt", "text": "Loading cepat", "className": "c2" }
+    ],
+    "orbit1": [
+      { "icon": "plane", "color": "#1565D8" },
+      { "icon": "chat", "color": "#1FB655" },
+      { "icon": "camera", "color": "#E1306C" },
+      { "icon": "pin", "color": "#EA4335" }
+    ],
+    "orbit2": [
+      { "icon": "cal", "color": "#7C5CFC" },
+      { "icon": "mail", "color": "#FF8A3D" },
+      { "icon": "card", "color": "#0A2342" },
+      { "icon": "star", "color": "#F5B301" },
+      { "icon": "globe", "color": "#12B5A6" },
+      { "icon": "bag", "color": "#E5484D" }
+    ]
+  },
+  "services": {
+    "title": "Satu tim, semua jenis website bisnis",
+    "subtitle": "Pilih jenis website yang paling sesuai. Semua dibuat dengan desain khusus, bukan template yang dipakai ulang.",
+    "items": [
+      {
+        "icon": "i-plane",
+        "color": "#1565D8",
+        "title": "Travel & Tour",
+        "desc": "Katalog paket, galeri, itinerary, dan tombol booking ke WhatsApp. Siap dua bahasa untuk turis mancanegara."
+      },
+      {
+        "icon": "i-bld",
+        "color": "#0A2342",
+        "title": "Company Profile",
+        "desc": "Profil, layanan, portofolio, dan kontak yang membangun kepercayaan calon klien sejak kunjungan pertama."
+      },
+      {
+        "icon": "i-bag",
+        "color": "#FF8A3D",
+        "title": "Toko & Katalog",
+        "desc": "Tampilkan produk dan harga dengan rapi. Pesanan masuk lewat WhatsApp atau tautan marketplace Anda."
+      },
+      {
+        "icon": "i-bolt",
+        "color": "#12B5A6",
+        "title": "Landing Page Promo",
+        "desc": "Satu halaman fokus untuk iklan Instagram dan Google, lengkap dengan formulir dan pelacakan konversi."
+      }
+    ]
+  },
+  "marquee": {
+    "title": "Cocok untuk berbagai jenis bisnis",
+    "subtitle": "Dari usaha wisata sampai perusahaan, strukturnya kami sesuaikan dengan cara pelanggan Anda mencari dan memesan.",
+    "row1": [
+      "Travel & Tour",
+      "Company Profile",
+      "Toko Online",
+      "Restoran & Kafe",
+      "Klinik & Kecantikan",
+      "Villa & Penginapan"
+    ],
+    "row2": [
+      "Sewa Kendaraan",
+      "Fotografer",
+      "Sekolah & Kursus",
+      "Konsultan",
+      "Event Organizer",
+      "Bengkel & Jasa"
+    ]
+  },
+  "stats": [
+    { "value": 120, "suffix": "+", "label": "Website selesai" },
+    { "value": 7, "suffix": " hari", "label": "Rata-rata waktu pengerjaan" },
+    { "value": 98, "suffix": "%", "label": "Klien puas" },
+    { "value": 24, "suffix": "/7", "label": "Website online terus" }
+  ],
+  "templates": {
+    "title": "Contoh tampilan website",
+    "subtitle": "Arahkan kursor ke kartu untuk melihat halaman bergulir seperti di browser.",
+    "perPage": 3,
+    "items": [
+      {
+        "title": "Lombok Travel Diary",
+        "desc": "Paket wisata Sembalun, trekking Rinjani, airport transfer & snorkeling trip Gili.",
+        "domain": "lomboktraveldiary.com",
+        "img": "/www.lomboktraveldiary.com.png",
+        "color": "#1565D8"
+      },
+      {
+        "title": "Tour Transport Lombok",
+        "desc": "Sewa mobil private driver, antar jemput bandara & custom tour Lombok-Sumbawa.",
+        "domain": "tourtransportlombok.com",
+        "img": "/www.tourtransportlombok.com.png",
+        "color": "#0A2342"
+      },
+      {
+        "title": "Lombok Fun Fishing",
+        "desc": "Charter perahu tradisional outrigger, spot mancing karang Ampenan & trip laut.",
+        "domain": "lombokfunfishing.com",
+        "img": "/www.lombokfunfishing.com.png",
+        "color": "#12B5A6"
+      },
+      {
+        "title": "ENN World News",
+        "desc": "Portal berita internasional multi-kategori dengan artikel real-time dan tampilan editorial premium.",
+        "domain": "ennworldnews.com",
+        "img": "/www.ennworldnews.com.png",
+        "color": "#C0392B"
+      }
+    ]
+  },
+  "process": {
+    "title": "Dari ide sampai online, empat langkah",
+    "subtitle": "Anda cukup menyiapkan materi. Sisanya kami kerjakan dan kabarkan di setiap tahap.",
+    "steps": [
+      {
+        "num": "1",
+        "title": "Konsultasi",
+        "desc": "Kami pahami bisnis, target pengunjung, dan tujuan website."
+      },
+      {
+        "num": "2",
+        "title": "Desain",
+        "desc": "Anda menerima rancangan tampilan dan menyetujuinya."
+      },
+      {
+        "num": "3",
+        "title": "Pengembangan",
+        "desc": "Desain dibangun menjadi website yang cepat dan responsif."
+      },
+      {
+        "num": "4",
+        "title": "Peluncuran",
+        "desc": "Website tayang di domain Anda dan siap menerima pelanggan."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Paket yang bisa tumbuh bersama bisnis Anda",
+    "subtitle": "Pilih paket sesuai kebutuhan bisnis Anda.",
+    "plans": [
+      {
+        "name": "Landing Page",
+        "price": "Rp 899 rb",
+        "period": "sekali bayar tahun pertama",
+        "popular": false,
+        "features": [
+          "Domain .xyz, .online, .site, dll",
+          "1 halaman landing page profesional",
+          "Desain responsif mobile-friendly",
+          "Tombol booking langsung WhatsApp",
+          "Gratis hosting & SSL tahun pertama",
+          "Revisi desain 2 kali"
+        ],
+        "buttonLabel": "Pilih Landing Page"
+      },
+      {
+        "name": "Website",
+        "price": "Rp 1.199 rb",
+        "period": "sekali bayar tahun pertama",
+        "popular": true,
+        "popularBadge": "Paling dipilih",
+        "features": [
+          "Domain resmi .com / .id / .co.id",
+          "Company profile / travel / toko multi-halaman",
+          "Desain profesional & galeri konten",
+          "SEO dasar & integrasi Google Maps",
+          "Tombol WhatsApp & formulir kontak",
+          "Revisi desain 3 kali"
+        ],
+        "buttonLabel": "Pilih Website"
+      },
+      {
+        "name": "Custom",
+        "price": "Konsultasi",
+        "period": "sesuai kebutuhan sistem",
+        "popular": false,
+        "features": [
+          "Berbagai jenis website & aplikasi web",
+          "Fitur custom: booking, kalkulator, portal berita",
+          "Integrasi database & dashboard admin",
+          "Multi-bahasa & multi-halaman tak terbatas",
+          "Dukungan teknis prioritas & pemeliharaan",
+          "Pelatihan pengelolaan sistem"
+        ],
+        "buttonLabel": "Konsultasi Custom"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Pertanyaan yang sering diajukan",
+    "items": [
+      {
+        "q": "Berapa lama website selesai?",
+        "a": "Landing page biasanya 3 sampai 7 hari kerja. Website multi halaman 2 sampai 3 minggu, tergantung kesiapan materi."
+      },
+      {
+        "q": "Apakah bisa dua bahasa untuk turis asing?",
+        "a": "Bisa. Paket Premium mencakup versi Indonesia dan Inggris dengan pilihan bahasa di bagian atas halaman."
+      },
+      {
+        "q": "Siapa yang mengurus domain dan hosting?",
+        "a": "Kami bantu pembelian dan pengaturannya. Domain tetap terdaftar atas nama Anda."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Siap punya website yang bekerja untuk bisnis Anda?",
+    "subtitle": "Ceritakan kebutuhan Anda. Kami balas dengan rekomendasi dan estimasi hari ini.",
+    "buttonLabel": "Chat via WhatsApp"
+  },
+  "footer": {
+    "quickLinksTitle": "Navigasi",
+    "servicesTitle": "Layanan",
+    "contactTitle": "Kontak & Layanan",
+    "address": "Lombok & Seluruh Indonesia\nLayanan Online Cepat & Responsif",
+    "hours": "Senin - Sabtu: 08.00 - 21.00 WITA",
+    "copyright": "© 2026 Wadah-Web. Semua hak dilindungi."
+  },
+  "bottomNav": [
+    { "label": "Home", "href": "#top", "icon": "i-home", "type": "link" },
+    { "label": "Layanan", "href": "#layanan", "icon": "i-grid", "type": "link" },
+    { "label": "WhatsApp", "href": "https://wa.me/6281234567890", "icon": "i-wa", "type": "wa" },
+    { "label": "Contoh", "href": "#contoh", "icon": "i-globe", "type": "link" },
+    { "label": "Paket", "href": "#paket", "icon": "i-card", "type": "link" }
+  ]
+}
