@@ -4,7 +4,7 @@
     "description": "Jasa pembuatan website modern untuk travel, company profile, toko, dan bisnis lokal. Cepat, responsif, siap menerima booking via WhatsApp."
   },
   "brand": {
-    "logo": "/logo.png",
+    "logo": "/logo.webp",
     "primaryText": "Wadah",
     "secondaryText": "Web",
     "whatsappUrl": "https://wa.me/6281234567890",
@@ -118,28 +118,28 @@
         "title": "Lombok Travel Diary",
         "desc": "Paket wisata Sembalun, trekking Rinjani, airport transfer & snorkeling trip Gili.",
         "domain": "lomboktraveldiary.com",
-        "img": "/www.lomboktraveldiary.com.png",
+        "img": "/www.lomboktraveldiary.com.webp",
         "color": "#1565D8"
       },
       {
         "title": "Tour Transport Lombok",
         "desc": "Sewa mobil private driver, antar jemput bandara & custom tour Lombok-Sumbawa.",
         "domain": "tourtransportlombok.com",
-        "img": "/www.tourtransportlombok.com.png",
+        "img": "/www.tourtransportlombok.com.webp",
         "color": "#0A2342"
       },
       {
         "title": "Lombok Fun Fishing",
         "desc": "Charter perahu tradisional outrigger, spot mancing karang Ampenan & trip laut.",
         "domain": "lombokfunfishing.com",
-        "img": "/www.lombokfunfishing.com.png",
+        "img": "/www.lombokfunfishing.com.webp",
         "color": "#12B5A6"
       },
       {
         "title": "ENN World News",
         "desc": "Portal berita internasional multi-kategori dengan artikel real-time dan tampilan editorial premium.",
         "domain": "ennworldnews.com",
-        "img": "/www.ennworldnews.com.png",
+        "img": "/www.ennworldnews.com.webp",
         "color": "#C0392B"
       }
     ]

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { useContent } from "@/context/ContentContext";
 
 export default function HomeClient() {
@@ -193,10 +194,13 @@ export default function HomeClient() {
       <nav id="nav">
         <div className="wrap">
           <a href="#top" className="logo">
-            <img
+            <Image
               src={content.brand.logo}
               alt={`${content.brand.primaryText}${content.brand.secondaryText}`}
+              width={32}
+              height={32}
               style={{ height: "32px", width: "auto", display: "block" }}
+              priority
             />
             <span className="logo-label">
               <span className="p">{content.brand.primaryText}</span>
@@ -485,7 +489,13 @@ export default function HomeClient() {
                         <span>{tpl.domain}</span>
                       </div>
                       <div className="view">
-                        <img src={tpl.img} alt={tpl.title} loading="lazy" />
+                        <Image
+                          src={tpl.img}
+                          alt={tpl.title}
+                          width={1200}
+                          height={4000}
+                          loading="lazy"
+                        />
                       </div>
                       <figcaption>
                         <h3>{tpl.title}</h3>
@@ -646,10 +656,13 @@ export default function HomeClient() {
           <div className="footer-grid">
             <div className="f-col f-brand">
               <a href="#top" className="logo">
-                <img
+                <Image
                   src={content.brand.logo}
                   alt={`${content.brand.primaryText}${content.brand.secondaryText}`}
+                  width={32}
+                  height={32}
                   style={{ height: "32px", width: "auto", display: "block" }}
+                  loading="lazy"
                 />
                 <span className="logo-label">
                   <span className="p">{content.brand.primaryText}</span>
@@ -774,7 +787,14 @@ export default function HomeClient() {
           </div>
           <div className="modal-body" id="modalBody">
             {modalData && (
-              <img id="modalImg" src={modalData.img} alt="Website Preview" />
+              <Image
+                id="modalImg"
+                src={modalData.img}
+                alt="Website Preview"
+                width={1200}
+                height={4000}
+                loading="lazy"
+              />
             )}
           </div>
         </div>
