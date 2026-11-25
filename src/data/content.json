@@ -40,28 +40,28 @@
     "ctaLabel": "Mulai Sekarang →"
   },
   "hero": {
-    "badgeTag": "Sat Set",
-    "badgeText": "Website jadi dalam 7 hari — garansi maintenance selamanya",
-    "title": "Bisnis Anda layak punya website yang bikin orang langsung hubungi Anda",
-    "lead": "Bukan sekadar tampil di internet. Website kami dirancang agar pengunjung langsung percaya, tertarik, dan terdorong chat atau booking via WhatsApp.",
-    "primaryCta": "Chat & Konsultasi Gratis",
-    "secondaryCta": "Lihat Hasil Karya →",
+    "badgeTag": "Baru",
+    "badgeText": "Slot pengerjaan bulan ini terbatas",
+    "title": "Website modern untuk travel, company profile, dan bisnis Anda",
+    "lead": "Kami merancang dan membangun website yang cepat, rapi di semua layar, dan mengarahkan pengunjung langsung menghubungi atau memesan lewat WhatsApp.",
+    "primaryCta": "Konsultasi gratis",
+    "secondaryCta": "Lihat contoh tampilan",
     "trustItems": [
-      "Online dalam 7 hari kerja",
-      "Ringan & cepat di semua HP",
-      "Revisi sampai Anda puas"
+      "Online mulai 7 hari",
+      "Responsif di HP",
+      "Revisi sampai cocok"
     ],
-    "coreDomain": "namabisnisanda.com",
-    "corePill": "Orderan via WhatsApp ✓",
+    "coreDomain": "namabisnis.com",
+    "corePill": "Pesan via WhatsApp",
     "chips": [
       {
         "icon": "i-up",
-        "text": "Orderan naik!",
+        "text": "Booking naik",
         "className": "c1"
       },
       {
         "icon": "i-bolt",
-        "text": "Sat set online",
+        "text": "Loading cepat",
         "className": "c2"
       }
     ],
