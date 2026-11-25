@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Wadah-Web | Jasa Pembuatan Website Travel, Company Profile & Bisnis",
-    "description": "Jasa pembuatan website modern untuk travel, company profile, toko, dan bisnis lokal. Cepat, responsif, siap menerima booking via WhatsApp."
+    "title": "Wadah-Web | Website Profesional Sat Set Jadi — Travel, Bisnis & Company Profile",
+    "description": "Jasa bikin website cepat, keren, dan langsung terima orderan via WhatsApp. Mulai 899 ribu, online dalam 7 hari, garansi maintenance selamanya."
   },
   "brand": {
     "logo": "/logo.webp",
@@ -12,110 +12,179 @@
     "email": "official.wadahweb@gmail.com",
     "instagram": "official.wadahweb",
     "instagramUrl": "https://instagram.com/official.wadahweb",
-    "description": "Partner terpercaya pembuatan website modern & aplikasi khusus untuk mempercepat pertumbuhan bisnis Anda dengan integrasi WhatsApp langsung."
+    "description": "Website sat set jadi — desain keren, cepat dibuka, dan langsung terhubung ke WhatsApp bisnis Anda."
   },
   "nav": {
     "links": [
-      { "label": "Layanan", "href": "#layanan" },
-      { "label": "Contoh", "href": "#contoh" },
-      { "label": "Proses", "href": "#proses" },
-      { "label": "Paket", "href": "#paket" },
-      { "label": "FAQ", "href": "#faq" }
+      {
+        "label": "Layanan",
+        "href": "#layanan"
+      },
+      {
+        "label": "Portofolio",
+        "href": "#contoh"
+      },
+      {
+        "label": "Proses",
+        "href": "#proses"
+      },
+      {
+        "label": "Harga",
+        "href": "#paket"
+      },
+      {
+        "label": "FAQ",
+        "href": "#faq"
+      }
     ],
-    "ctaLabel": "Hubungi kami"
+    "ctaLabel": "Mulai Sekarang →"
   },
   "hero": {
-    "badgeTag": "Baru",
-    "badgeText": "Slot pengerjaan bulan ini terbatas",
-    "title": "Website modern untuk travel, company profile, dan bisnis Anda",
-    "lead": "Kami merancang dan membangun website yang cepat, rapi di semua layar, dan mengarahkan pengunjung langsung menghubungi atau memesan lewat WhatsApp.",
-    "primaryCta": "Konsultasi gratis",
-    "secondaryCta": "Lihat contoh tampilan",
+    "badgeTag": "Sat Set",
+    "badgeText": "Website jadi dalam 7 hari — garansi maintenance selamanya",
+    "title": "Bisnis Anda layak punya website yang bikin orang langsung hubungi Anda",
+    "lead": "Bukan sekadar tampil di internet. Website kami dirancang agar pengunjung langsung percaya, tertarik, dan terdorong chat atau booking via WhatsApp.",
+    "primaryCta": "Chat & Konsultasi Gratis",
+    "secondaryCta": "Lihat Hasil Karya →",
     "trustItems": [
-      "Online mulai 7 hari",
-      "Responsif di HP",
-      "Revisi sampai cocok"
+      "Online dalam 7 hari kerja",
+      "Ringan & cepat di semua HP",
+      "Revisi sampai Anda puas"
     ],
-    "coreDomain": "namabisnis.com",
-    "corePill": "Pesan via WhatsApp",
+    "coreDomain": "namabisnisanda.com",
+    "corePill": "Orderan via WhatsApp ✓",
     "chips": [
-      { "icon": "i-up", "text": "Booking naik", "className": "c1" },
-      { "icon": "i-bolt", "text": "Loading cepat", "className": "c2" }
+      {
+        "icon": "i-up",
+        "text": "Orderan naik!",
+        "className": "c1"
+      },
+      {
+        "icon": "i-bolt",
+        "text": "Sat set online",
+        "className": "c2"
+      }
     ],
     "orbit1": [
-      { "icon": "plane", "color": "#1565D8" },
-      { "icon": "chat", "color": "#1FB655" },
-      { "icon": "camera", "color": "#E1306C" },
-      { "icon": "pin", "color": "#EA4335" }
+      {
+        "icon": "plane",
+        "color": "#1565D8"
+      },
+      {
+        "icon": "chat",
+        "color": "#1FB655"
+      },
+      {
+        "icon": "camera",
+        "color": "#E1306C"
+      },
+      {
+        "icon": "pin",
+        "color": "#EA4335"
+      }
     ],
     "orbit2": [
-      { "icon": "cal", "color": "#7C5CFC" },
-      { "icon": "mail", "color": "#FF8A3D" },
-      { "icon": "card", "color": "#0A2342" },
-      { "icon": "star", "color": "#F5B301" },
-      { "icon": "globe", "color": "#12B5A6" },
-      { "icon": "bag", "color": "#E5484D" }
+      {
+        "icon": "cal",
+        "color": "#7C5CFC"
+      },
+      {
+        "icon": "mail",
+        "color": "#FF8A3D"
+      },
+      {
+        "icon": "card",
+        "color": "#0A2342"
+      },
+      {
+        "icon": "star",
+        "color": "#F5B301"
+      },
+      {
+        "icon": "globe",
+        "color": "#12B5A6"
+      },
+      {
+        "icon": "bag",
+        "color": "#E5484D"
+      }
     ]
   },
   "services": {
-    "title": "Satu tim, semua jenis website bisnis",
-    "subtitle": "Pilih jenis website yang paling sesuai. Semua dibuat dengan desain khusus, bukan template yang dipakai ulang.",
+    "title": "Satu tempat, semua jenis website bisnis",
+    "subtitle": "Dibuat khusus sesuai bidang usaha Anda — bukan template curian yang dipakai ulang oleh ratusan bisnis lain.",
     "items": [
       {
         "icon": "i-plane",
         "color": "#1565D8",
-        "title": "Travel & Tour",
-        "desc": "Katalog paket, galeri, itinerary, dan tombol booking ke WhatsApp. Siap dua bahasa untuk turis mancanegara."
+        "title": "Tour & Travel",
+        "desc": "Paket wisata, foto destinasi, itinerary, dan tombol booking langsung WA. Siap bilingual untuk tamu mancanegara."
       },
       {
         "icon": "i-bld",
         "color": "#0A2342",
         "title": "Company Profile",
-        "desc": "Profil, layanan, portofolio, dan kontak yang membangun kepercayaan calon klien sejak kunjungan pertama."
+        "desc": "Tampil profesional di depan klien dan investor. Profil, layanan, portofolio, dan kontak dalam satu halaman yang meyakinkan."
       },
       {
         "icon": "i-bag",
         "color": "#FF8A3D",
-        "title": "Toko & Katalog",
-        "desc": "Tampilkan produk dan harga dengan rapi. Pesanan masuk lewat WhatsApp atau tautan marketplace Anda."
+        "title": "Katalog & Toko Online",
+        "desc": "Produk tampil rapi dengan foto dan harga jelas. Pembeli tinggal klik — order langsung masuk ke WA Anda."
       },
       {
         "icon": "i-bolt",
         "color": "#12B5A6",
-        "title": "Landing Page Promo",
-        "desc": "Satu halaman fokus untuk iklan Instagram dan Google, lengkap dengan formulir dan pelacakan konversi."
+        "title": "Landing Page Iklan",
+        "desc": "Halaman 1 tujuan khusus iklan Meta, TikTok, atau Google Ads. Fokus konversi — klik jadi chat, chat jadi cuan."
       }
     ]
   },
   "marquee": {
-    "title": "Cocok untuk berbagai jenis bisnis",
-    "subtitle": "Dari usaha wisata sampai perusahaan, strukturnya kami sesuaikan dengan cara pelanggan Anda mencari dan memesan.",
+    "title": "Sudah dipercaya ratusan pelaku usaha",
+    "subtitle": "Dari warung kopi sampai perusahaan besar, semua bisa punya website keren yang bekerja 24 jam.",
     "row1": [
-      "Travel & Tour",
+      "Tour & Travel",
       "Company Profile",
       "Toko Online",
-      "Restoran & Kafe",
-      "Klinik & Kecantikan",
-      "Villa & Penginapan"
+      "Restoran & Cafe",
+      "Klinik & Salon",
+      "Villa & Homestay"
     ],
     "row2": [
-      "Sewa Kendaraan",
-      "Fotografer",
-      "Sekolah & Kursus",
-      "Konsultan",
+      "Rental Kendaraan",
+      "Fotografer & Studio",
+      "Jasa & Konsultan",
+      "Kursus & Les Privat",
       "Event Organizer",
-      "Bengkel & Jasa"
+      "Bengkel & Properti"
     ]
   },
   "stats": [
-    { "value": 120, "suffix": "+", "label": "Website selesai" },
-    { "value": 7, "suffix": " hari", "label": "Rata-rata waktu pengerjaan" },
-    { "value": 98, "suffix": "%", "label": "Klien puas" },
-    { "value": 24, "suffix": "/7", "label": "Website online terus" }
+    {
+      "value": 120,
+      "suffix": "+",
+      "label": "Website sudah online"
+    },
+    {
+      "value": 7,
+      "suffix": " hari",
+      "label": "Rata-rata siap tayang"
+    },
+    {
+      "value": 98,
+      "suffix": "%",
+      "label": "Klien puas & balik lagi"
+    },
+    {
+      "value": 24,
+      "suffix": "/7",
+      "label": "Support siap bantu"
+    }
   ],
   "templates": {
-    "title": "Contoh tampilan website",
-    "subtitle": "Arahkan kursor ke kartu untuk melihat halaman bergulir seperti di browser.",
+    "title": "Hasil nyata dari klien kami",
+    "subtitle": "Hover atau sentuh kartu untuk lihat tampilan aslinya — persis seperti yang akan dilihat pelanggan Anda.",
     "perPage": 3,
     "items": [
       {
@@ -149,34 +218,34 @@
     ]
   },
   "process": {
-    "title": "Dari ide sampai online, empat langkah",
-    "subtitle": "Anda cukup menyiapkan materi. Sisanya kami kerjakan dan kabarkan di setiap tahap.",
+    "title": "Sat set 4 langkah, website Anda jadi",
+    "subtitle": "Anda cukup cerita & kirim materi. Teknis, desain, server — semua kami yang beresin.",
     "steps": [
       {
         "num": "1",
-        "title": "Konsultasi",
-        "desc": "Kami pahami bisnis, target pengunjung, dan tujuan website."
+        "title": "Cerita dulu",
+        "desc": "Chat santai soal bisnis, target pembeli, dan keinginan Anda. Gratis, tanpa komitmen."
       },
       {
         "num": "2",
-        "title": "Desain",
-        "desc": "Anda menerima rancangan tampilan dan menyetujuinya."
+        "title": "Desain disetujui",
+        "desc": "Kami tampilkan rancangan visual. Anda cek dan setujui — bisa minta revisi sampai sreg."
       },
       {
         "num": "3",
-        "title": "Pengembangan",
-        "desc": "Desain dibangun menjadi website yang cepat dan responsif."
+        "title": "Website dibangun",
+        "desc": "Koding dimulai. Ringan, cepat, dan tombol WA langsung aktif terhubung ke nomor Anda."
       },
       {
         "num": "4",
-        "title": "Peluncuran",
-        "desc": "Website tayang di domain Anda dan siap menerima pelanggan."
+        "title": "Online & siap orderan",
+        "desc": "Domain aktif, website tayang, Google bisa temukan bisnis Anda. Sat set beres!"
       }
     ]
   },
   "pricing": {
-    "title": "Paket yang bisa tumbuh bersama bisnis Anda",
-    "subtitle": "Pilih paket sesuai kebutuhan bisnis Anda.",
+    "title": "Harga jelas, manfaat nyata",
+    "subtitle": "Tidak ada biaya tersembunyi. Pilih paket yang cocok — bayar sekali, website Anda langsung jalan.",
     "plans": [
       {
         "name": "Landing Page",
@@ -189,6 +258,7 @@
           "Desain responsif mobile-friendly",
           "Tombol booking langsung WhatsApp",
           "Gratis hosting & SSL tahun pertama",
+          "Support 24/7",
           "Revisi desain 2 kali"
         ],
         "buttonLabel": "Pilih Landing Page"
@@ -201,9 +271,11 @@
         "popularBadge": "Paling dipilih",
         "features": [
           "Domain resmi .com / .id / .co.id",
-          "Company profile / travel / toko multi-halaman",
-          "Desain profesional & galeri konten",
-          "SEO dasar & integrasi Google Maps",
+          "Bebas jumlah halaman",
+          "Desain custom berstandart Google",
+          "Aktivasi Google Console & indexing",
+          "Garansi maintenance selamanya",
+          "Support 24/7",
           "Tombol WhatsApp & formulir kontak",
           "Revisi desain 3 kali"
         ],
@@ -215,52 +287,94 @@
         "period": "sesuai kebutuhan sistem",
         "popular": false,
         "features": [
-          "Berbagai jenis website & aplikasi web",
-          "Fitur custom: booking, kalkulator, portal berita",
+          "Website & aplikasi web skala besar",
+          "Fitur custom: booking, kalkulator, portal",
           "Integrasi database & dashboard admin",
-          "Multi-bahasa & multi-halaman tak terbatas",
-          "Dukungan teknis prioritas & pemeliharaan",
-          "Pelatihan pengelolaan sistem"
+          "Multi-bahasa & halaman tak terbatas",
+          "Prioritas teknis & pemeliharaan penuh",
+          "Support 24/7",
+          "Pelatihan kelola sistem mandiri"
         ],
         "buttonLabel": "Konsultasi Custom"
       }
     ]
   },
   "faq": {
-    "title": "Pertanyaan yang sering diajukan",
+    "title": "Yang sering ditanyakan sebelum order",
     "items": [
       {
         "q": "Berapa lama website selesai?",
-        "a": "Landing page biasanya 3 sampai 7 hari kerja. Website multi halaman 2 sampai 3 minggu, tergantung kesiapan materi."
+        "a": "Landing page biasanya selesai 3 sampai 7 hari kerja. Website multi-halaman sekitar 1 sampai 2 minggu, tergantung kesiapan materi (teks, foto, dan logo) dari Anda."
       },
       {
-        "q": "Apakah bisa dua bahasa untuk turis asing?",
-        "a": "Bisa. Paket Premium mencakup versi Indonesia dan Inggris dengan pilihan bahasa di bagian atas halaman."
+        "q": "Apa maksud garansi maintenance selamanya?",
+        "a": "Kami menjamin website Anda tetap berjalan normal selamanya. Jika terjadi error sistem, bug tampilan, kendala SSL/hosting, atau gangguan teknis lainnya, tim Wadah-Web siap memperbaikinya tanpa biaya tambahan."
+      },
+      {
+        "q": "Bagaimana aktivasi Google Console dan indexing bekerja?",
+        "a": "Website Anda akan kami daftarkan langsung ke Google Search Console, dikonfigurasikan sitemap XML-nya, dan dioptimasi agar robot Google segera mengindeks halaman website Anda sehingga muncul di hasil pencarian Google."
+      },
+      {
+        "q": "Apakah benar bebas jumlah halaman di paket Website 1.199 rb?",
+        "a": "Benar. Anda bisa menambahkan halaman profil usaha, daftar layanan/produk, artikel/blog, portofolio, kontak, galeri, hingga landing page promo tanpa batasan jumlah halaman."
       },
       {
         "q": "Siapa yang mengurus domain dan hosting?",
-        "a": "Kami bantu pembelian dan pengaturannya. Domain tetap terdaftar atas nama Anda."
+        "a": "Seluruh proses pembelian domain, hosting server berkecepatan tinggi, setup SSL (https), hingga konfigurasi DNS kami bantu sampai aktif. Domain sepenuhnya menjadi hak milik atas nama bisnis Anda."
+      },
+      {
+        "q": "Apakah bisa integrasi dengan WhatsApp dan media sosial?",
+        "a": "Tentu! Semua tombol booking, order, maupun konsultasi akan langsung terhubung ke WhatsApp bisnis Anda dengan pesan otomatis. Tautan Instagram, Facebook, TikTok, dan Google Maps juga kami pasang rapi."
+      },
+      {
+        "q": "Bagaimana jika di kemudian hari saya ingin mengubah isi website?",
+        "a": "Anda mendapatkan support 24/7. Anda cukup kirimkan update konten ke tim kami, atau kami sediakan panduan mudah jika Anda ingin mengedit tulisan/gambar sendiri secara mandiri."
       }
     ]
   },
   "cta": {
-    "title": "Siap punya website yang bekerja untuk bisnis Anda?",
-    "subtitle": "Ceritakan kebutuhan Anda. Kami balas dengan rekomendasi dan estimasi hari ini.",
-    "buttonLabel": "Chat via WhatsApp"
+    "title": "Website sat set jadi — bisnis Anda siap online hari ini",
+    "subtitle": "Ceritakan bisnis Anda sekarang. Kami balas dengan konsep, estimasi harga, dan timeline pengerjaan — cepat, gratis, tanpa basa-basi.",
+    "buttonLabel": "Chat WhatsApp Sekarang →"
   },
   "footer": {
     "quickLinksTitle": "Navigasi",
     "servicesTitle": "Layanan",
     "contactTitle": "Kontak & Layanan",
-    "address": "Lombok & Seluruh Indonesia\nLayanan Online Cepat & Responsif",
-    "hours": "Senin - Sabtu: 08.00 - 21.00 WITA",
+    "address": "Lombok & Seluruh Indonesia\nLayanan Online — Sat Set Responsif",
+    "hours": "Senin–Sabtu: 08.00–21.00 WITA • Support 24/7",
     "copyright": "© 2026 Wadah-Web. Semua hak dilindungi."
   },
   "bottomNav": [
-    { "label": "Home", "href": "#top", "icon": "i-home", "type": "link" },
-    { "label": "Layanan", "href": "#layanan", "icon": "i-grid", "type": "link" },
-    { "label": "WhatsApp", "href": "https://wa.me/6285181906445", "icon": "i-wa", "type": "wa" },
-    { "label": "Contoh", "href": "#contoh", "icon": "i-globe", "type": "link" },
-    { "label": "Paket", "href": "#paket", "icon": "i-card", "type": "link" }
+    {
+      "label": "Home",
+      "href": "#top",
+      "icon": "i-home",
+      "type": "link"
+    },
+    {
+      "label": "Layanan",
+      "href": "#layanan",
+      "icon": "i-grid",
+      "type": "link"
+    },
+    {
+      "label": "WhatsApp",
+      "href": "https://wa.me/6285181906445",
+      "icon": "i-wa",
+      "type": "wa"
+    },
+    {
+      "label": "Portofolio",
+      "href": "#contoh",
+      "icon": "i-globe",
+      "type": "link"
+    },
+    {
+      "label": "Harga",
+      "href": "#paket",
+      "icon": "i-card",
+      "type": "link"
+    }
   ]
 }

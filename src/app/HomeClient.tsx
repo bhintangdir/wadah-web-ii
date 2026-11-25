@@ -24,6 +24,13 @@ export default function HomeClient() {
     coreRef.current.style.translate = `${x}px ${y}px`;
   };
 
+  // Helper untuk membuat URL WhatsApp dengan pesan template spesifik
+  const getWaUrl = (text?: string) => {
+    const baseUrl = content.brand.whatsappUrl || `https://wa.me/62${content.brand.whatsappNumber?.replace(/^0/, "")}`;
+    if (!text) return baseUrl;
+    return `${baseUrl}?text=${encodeURIComponent(text)}`;
+  };
+
   // Tilt on service cards
   const handleCardMouseMove = (e: React.MouseEvent<HTMLElement>) => {
     const c = e.currentTarget;
@@ -226,7 +233,7 @@ export default function HomeClient() {
           </ul>
           <a
             className="btn sm wa"
-            href={content.brand.whatsappUrl}
+            href={getWaUrl("Halo Wadah-Web, saya ingin konsultasi mengenai pembuatan website.")}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -254,7 +261,7 @@ export default function HomeClient() {
             <div className="cta load" style={{ "--n": 3 } as React.CSSProperties}>
               <a
                 className="btn wa pulse"
-                href={content.brand.whatsappUrl}
+                href={getWaUrl("Halo Wadah-Web, saya tertarik untuk konsultasi gratis pembuatan website.")}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -601,10 +608,13 @@ export default function HomeClient() {
                 </ul>
                 <a
                   className={`btn ${plan.popular ? "" : "ghost"}`}
-                  href={content.brand.whatsappUrl}
+                  href={getWaUrl(`Halo Wadah-Web, saya tertarik untuk memesan paket: ${plan.name} (${plan.price}). Mohon info langkah selanjutnya.`)}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <svg className="i" style={{ width: "18px", height: "18px", fill: "currentColor", stroke: "none" }}>
+                    <use href="#i-wa" />
+                  </svg>
                   {plan.buttonLabel}
                 </a>
               </div>
@@ -648,7 +658,7 @@ export default function HomeClient() {
           <p>{content.cta.subtitle}</p>
           <a
             className="btn wa pulse"
-            href={content.brand.whatsappUrl}
+            href={getWaUrl("Halo Wadah-Web, saya ingin bertanya lebih lanjut untuk pembuatan website bisnis saya.")}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -735,7 +745,7 @@ export default function HomeClient() {
               <a
                 className="btn sm wa"
                 style={{ marginTop: "14px", width: "fit-content" }}
-                href={content.brand.whatsappUrl}
+                href={getWaUrl("Halo Wadah-Web, saya ingin menghubungi tim Anda.")}
                 target="_blank"
                 rel="noopener noreferrer"
               >
